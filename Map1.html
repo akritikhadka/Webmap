@@ -23,7 +23,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_1b03b1b88d544155abcfee187cf0e83f {
+                #map_93bdade7e8aa4bc5a8db06757ca043d4 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -35,13 +35,13 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_1b03b1b88d544155abcfee187cf0e83f" ></div>
+            <div class="folium-map" id="map_93bdade7e8aa4bc5a8db06757ca043d4" ></div>
         
 </body>
 <script>    
     
-            var map_1b03b1b88d544155abcfee187cf0e83f = L.map(
-                "map_1b03b1b88d544155abcfee187cf0e83f",
+            var map_93bdade7e8aa4bc5a8db06757ca043d4 = L.map(
+                "map_93bdade7e8aa4bc5a8db06757ca043d4",
                 {
                     center: [38.58, -99.09],
                     crs: L.CRS.EPSG3857,
@@ -56,9 +56,39 @@
 
         
     
-            var tile_layer_bb7a73a8aa374270859c456aa26fbd47 = L.tileLayer(
-                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
-                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_1b03b1b88d544155abcfee187cf0e83f);
+            var tile_layer_09ea1914e686487bb7ce5a012ea2b6de = L.tileLayer(
+                "https://{s}.tiles.mapbox.com/v3/mapbox.world-bright/{z}/{x}/{y}.png",
+                {"attribution": "Map tiles by \u0026copy; \u003ca href=\"http://www.mapbox.com/about/maps\"\u003eMapbox\u003c/a\u003e Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_93bdade7e8aa4bc5a8db06757ca043d4);
         
+    
+            var feature_group_de08e40bf9b54b1e9940918d6eb9aac0 = L.featureGroup(
+                {}
+            ).addTo(map_93bdade7e8aa4bc5a8db06757ca043d4);
+        
+    
+            var marker_508300a66ea547d8a7154b7688a80c59 = L.marker(
+                [38.58, -99.09],
+                {}
+            ).addTo(feature_group_de08e40bf9b54b1e9940918d6eb9aac0);
+        
+    
+            var icon_b47685923c6444ae90048d8521351bbe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_508300a66ea547d8a7154b7688a80c59.setIcon(icon_b47685923c6444ae90048d8521351bbe);
+        
+    
+        var popup_da1efc14dfd04f78ba2878c57de03b49 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b8cedee8fa3b42e2814e02f978504a84 = $(`<div id="html_b8cedee8fa3b42e2814e02f978504a84" style="width: 100.0%; height: 100.0%;">Hi aaku</div>`)[0];
+            popup_da1efc14dfd04f78ba2878c57de03b49.setContent(html_b8cedee8fa3b42e2814e02f978504a84);
+        
+
+        marker_508300a66ea547d8a7154b7688a80c59.bindPopup(popup_da1efc14dfd04f78ba2878c57de03b49)
+        ;
+
+        
+    
 </script>
